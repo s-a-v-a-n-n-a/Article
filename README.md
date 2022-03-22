@@ -30,11 +30,18 @@
 <li>
 Организация информации в прямоугольных структурах с примером указана ниже:
 </li>
-<img src="Move&Forward/Таблица0.jpg" alt="Picture 2" width="500">
+
+| Структура | Пример |
+|:---------:|:------:|
+| <img src="Move&Forward/RectStruct.jpg" alt="Picture 0" width="500"> | <img src="Move&Forward/Rectange_real.jpg" alt="Picture 1" width="200"> |
+
 <li>
 Организация информации в структурах формы шестиугольника с примером указана в таблице ниже:
 </li>
-<img src="Move&Forward/Таблица1.jpg" alt="Picture 2" width="500">
+
+| Структура | Пример |
+|:---------:|:------:|
+| <img src="Move&Forward/HexagonStruct.jpg" alt="Picture 0" width="500"> | <img src="Move&Forward/Hexagon_real.jpg" alt="Picture 1" width="200"> |
 
 **Мотивация**
 -------------
