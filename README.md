@@ -35,7 +35,7 @@
 
 | Структура | Пример |
 |:---------:|:------:|
-| <img src="Move&Forward/RectStruct.jpg" alt="Picture 0" width="600"> | <img src="Move&Forward/Rectange_real.jpg" alt="Picture 1" width="230"> |
+| <img src="Move&Forward/RectStruct.jpg" alt="Picture 0" width="400"> | <img src="Move&Forward/Rectange_real.jpg" alt="Picture 1" width="150"> |
 
 <li>
 Организация информации в структурах формы шестиугольника с примером указана в таблице ниже:
