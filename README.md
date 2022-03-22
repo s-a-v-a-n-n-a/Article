@@ -181,9 +181,7 @@ after wrapper: 20
 
 Всё дело в передаваемом аргументе. Теперь <<загрузим>> в ту же функцию `rvalue`:
 
-| Передаём `rvalue` через `std::forward` | Просто передаём `rvalue` |
-|:--------------------------------------:|:------------------------:|
-| <img src="Move&Forward/ForwardRvalue.png" alt="Picture 0" width="400"> | <img src="Move&Forward/SimpleRvalue.png" alt="Picture 1" width="400"> |
+<img src="Move&Forward/Таблица5.jpg" alt="Picture 3" width="500">
 
 Стоит отметить, что здесь важно <<форвардить>> аргумент при имитации загрузки в контейнер, иначе ничего не сработает.
 
