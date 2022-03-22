@@ -22,11 +22,13 @@ STD::MOVE vs STD::FORWARDING
 
 Организация информации в прямоугольных структурах с примером указана ниже:
 
-<img src="Move&Forward/Таблица0.jpg" alt="Picture 2" width="500">
+| Структура | Пример |
+|:---------:|:------:|
+| <img src="RectStruct.jpg" alt="Picture 0" width="500"> | <img src="Rectange_real.jpg" alt="Picture 1" width="200"> |
 
 Организация информации в структурах формы шестиугольника с примером указана в таблице ниже:
 
-<img src="Move&Forward/Таблица1.jpg" alt="Picture 2" width="500">
+<img src="Таблица1.jpg" alt="Picture 2" width="500">
 
 Мотивация
 
@@ -74,11 +76,11 @@ void test()
 
 Давайте посмотрим на результат:
 
-<img src="Move&Forward/Таблица2.jpg" alt="Picture 3" width="500">
+<img src="Таблица2.jpg" alt="Picture 3" width="500">
 
 Как вы уже могли заметить, std::move превращает любой переданный аргумент в rvalue-ссылку. Действительно, ведь сначала он убирает все возможные ссылки, а потом использует static_cast. Очень полезная вещь, ведь по сути он даёт компилятору знать, что в этом месте можно применить операторы перемещения и в итоге позволяет, например, класть в контейнеры элементы, у которых запрещены какие-либо операторы копирования.
 
-<img src="Move&Forward/std_move.jpg" alt="Picture 4" width="500">
+<img src="std_move.jpg" alt="Picture 4" width="500">
 
 Появляется проблема
 
@@ -166,23 +168,23 @@ after wrapper: 20
 
 Внимательный и незнакомый с принципом работы инструмента std::forward читатель скажет: "Но если в этом случае не вызывать std::forward, будет абсолютно то же самое!". И это правда:
 
-<img src="Move&Forward/Таблица4.jpg" alt="Picture 3" width="500">
+<img src="Таблица4.jpg" alt="Picture 3" width="500">
 
 Всё дело в передаваемом аргументе. Теперь <<загрузим>> в ту же функцию `rvalue`:
 
 | Передаём `rvalue` через `std::forward` | Просто передаём `rvalue` |
 |:------------------------------------:|:----------------:|
-| <img src="Move&Forward/ForwardRvalue.png" alt="Picture 0" width="400"> | <img src="Move&Forward/SimpleRvalue.png" alt="Picture 1" width="400"> |
+| <img src="ForwardRvalue.png" alt="Picture 0" width="400"> | <img src="SimpleRvalue.png" alt="Picture 1" width="400"> |
 
 Стоит отметить, что здесь важно <<форвардить>> аргумент при имитации загрузки в контейнер, иначе ничего не сработает.
 
 И таким образом, приходим к осознанию, что `std::forward` хорош при точной, <<прозрачной передаче>> переменной, так как он оставляет `lvalue`-ссылку `lvaue`-ссылкой, а всё остальное приводит к `rvalue`.
 
-<img src="Move&Forward/std_forward.jpg" alt="Picture 4" width="500">
+<img src="std_forward.jpg" alt="Picture 4" width="500">
 
 Посмотрим, чем отличаются std::move и std::forward:
 
-<img src="Move&Forward/Таблица3.jpg" alt="Picture 3" width="500">
+<img src="Таблица3.jpg" alt="Picture 3" width="500">
 
 Почему бы не использовать только `std::forward`?
 
@@ -217,6 +219,6 @@ void test()
 
 Очень важным будет, на мой счёт, продублировать табличку выше. Она очень простая и тем не менее очень наглядно показывает разницу между `std::move` и `std::forward`:
 
-<img src="Move&Forward/Таблица3.jpg" alt="Picture 3" width="500">
+<img src="Таблица3.jpg" alt="Picture 3" width="500">
 
 Хотелось бы, чтобы читатель сделал правильные выводы из этой статьи и правильно использовал вышеупомянутые инструменты, чётко понимая, чего он от них хочет.
