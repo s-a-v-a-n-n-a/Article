@@ -69,7 +69,7 @@ void test()
 template&ltclass T&gt
 void container_push_imitaion(T&& arg) 
 {
-    volatile auto local_tmp = my_move(arg); // как будто пишем в контейнер
+    volatile auto local_tmp = std::move(arg); // как будто пишем в контейнер
 }
 
 template&ltclass T&gt
