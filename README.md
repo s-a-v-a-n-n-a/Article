@@ -32,8 +32,7 @@
 
 | Узел | Пример |
 |:----:|:------:|
-| <img src="Move&Forward/RectStruct.jpg" alt="Picture 0" width="400"> | <img src="Move&Forward/Rectangle_real.jpg" alt="Picture 1" width="300"> |
-| <em><b>Picture 0</b><br/>Structure of rectangles.</em> | <em><b>Picture 1</b><br/> Example of rectangle structure.</em> |
+| <img src="Move&Forward/RectStruct.jpg" alt="Picture 0" width="600"> | <img src="Move&Forward/Rectange_real.jpg" alt="Picture 1" width="190"> |
 
 **Мотивация**
 -------------
