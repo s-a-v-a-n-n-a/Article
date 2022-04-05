@@ -1,6 +1,8 @@
 **STD::MOVE vs STD::FORWARD**
 =============================
 
+<img src="Move&Forward/IntroPicture.jpg" alt="Picture -1" width="600">
+
 **Предисловие**
 ---------------
 
@@ -212,3 +214,5 @@ variable a after wrapper: 20
 <img src="Move&Forward/Таблица3.jpg" alt="Picture 3" width="500">
 
 Таким образом, очень важно правильно использовать вышеупомянутые инструменты, чётко понимая, чего вы от них хотите.
+
+<img src="Move&Forward/FinalPicture.jpg" alt="Picture 0" width="600">
